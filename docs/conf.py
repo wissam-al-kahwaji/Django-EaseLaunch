@@ -9,13 +9,15 @@ import os
 import sys
 import datetime
 import django
-from config import app
 
 sys.path.insert(0, os.path.abspath(".."))
 os.environ["DATABASE_URL"] = "sqlite:///readthedocs.db"
 os.environ["REDIS_URL"] = "redis://dummy:dummy@localhost:6379/0"
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.development")
 django.setup()
+
+if True:
+    from config import app
 
 current_year = datetime.datetime.now().year
 if 2024 == current_year:

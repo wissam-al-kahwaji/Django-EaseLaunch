@@ -9,7 +9,9 @@ octo-launch
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Octo Launch
 
-   octo-launch/index
+   Introduction/index
+   Get_Started/index
+   docker_compose/index
 

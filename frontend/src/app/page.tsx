@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex items-center justify-center h-screen">
-    <a href="https://github.com/oc-to/octo-launch">
+    <a href="https://github.com/caodlly/octo-launch">
     <div>
       <Image
           src="/octo.svg"

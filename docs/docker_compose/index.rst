@@ -8,4 +8,5 @@ Docker Compose
 
    docker-compose-dev
    docker-compose-docs
-
+   docker-compose-uwsgi
+   docker-compose-gunicorn

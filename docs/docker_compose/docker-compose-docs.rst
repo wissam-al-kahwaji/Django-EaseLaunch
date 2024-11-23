@@ -1,7 +1,7 @@
 Docker Compose Documentation Service
-______________________
+-----------------------------------
 
-The `docker-compose.docs` file defines the configuration for the Documentation service, which runs a Django-based documentation application.
+The `docker-compose.gunicorn.yml` file defines the configuration for the Documentation service, which runs a Django-based documentation application.
 
 The service is responsible for building and running the documentation in a container. It provides a development environment for managing and viewing the documentation.
 
@@ -22,7 +22,8 @@ The service is responsible for building and running the documentation in a conta
          - '9000:9000'
        command: /start-docs
 
-**Configuration Breakdown:**
+Configuration Breakdown:
+===========================
 
 - ``image``: Specifies the Docker image used for the container, in this case, `django_app_docs`.
 - ``container_name``: The name assigned to the container when it is running, in this case, `django_app_docs`.
@@ -33,7 +34,8 @@ The service is responsible for building and running the documentation in a conta
 - ``ports``: Maps port `9000` on the host machine to port `9000` inside the container, allowing access to the documentation service via `http://localhost:9000`.
 - ``command``: The command that runs when the container starts, which is `/start-docs`. This command initializes the documentation server inside the container.
 
-**How to Run the Documentation Service:**
+How to Run the Documentation Service:
+===========================
 
 To start the documentation service, you can use either of the following commands:
 

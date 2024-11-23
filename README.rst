@@ -1,5 +1,6 @@
 Introduction
 -------------
+**octo-launch simplifies the setup process of Django projects for faster development.**
 
 Why Octo-Launch?
 =================
@@ -128,3 +129,4 @@ If you want to add a new application, ensure you are in the root of your project
    octo startapp "your_app_name"
 
 This will create a new application following the same structure as the main project.  
+`read more <https://octo-launch.readthedocs.io/>`_

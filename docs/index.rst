@@ -15,4 +15,6 @@ octo-launch
    Get_Started/index
    docker_compose/index
    settings/index
-
+   just/index
+   app/index
+   contributors/index

@@ -17,4 +17,5 @@ octo-launch
    settings/index
    just/index
    app/index
+   logging/index
    contributors/index

@@ -285,7 +285,7 @@ platformdirs==4.2.1
     #   virtualenv
 pluggy==1.5.0
     # via pytest
-pre-commit==3.7.1
+pre-commit==4.0.1
     # via -r requirements.in
 prometheus-client==0.20.0
     # via flower

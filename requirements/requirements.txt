@@ -310,8 +310,6 @@ pyjwt==2.8.0
     # via djangorestframework-simplejwt
 pyotp==2.9.0
     # via -r requirements.in
-pypng==0.20220715.0
-    # via qrcode
 pyproject-hooks==1.1.0
     # via
     #   build
@@ -347,7 +345,7 @@ pyyaml==6.0.1
     #   pre-commit
 pyzmq==26.0.3
     # via jupyter-client
-qrcode==7.4.2
+qrcode==8.0
     # via -r requirements.in
 redis==5.0.4
     # via django-redis
@@ -443,7 +441,6 @@ typing-extensions==4.11.0
     # via
     #   collectfast
     #   pytest-factoryboy
-    #   qrcode
 tzdata==2024.1
     # via celery
 uritemplate==4.1.1

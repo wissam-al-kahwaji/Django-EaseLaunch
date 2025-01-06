@@ -480,7 +480,7 @@ webencodings==0.5.1
     #   tinycss2
 websockets==12.0
     # via sphinx-autobuild
-werkzeug==3.0.3
+werkzeug==3.1.3
     # via -r requirements.in
 wheel==0.43.0
     # via

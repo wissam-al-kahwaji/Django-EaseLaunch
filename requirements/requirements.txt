@@ -322,7 +322,7 @@ pytest==8.2.0
     #   pytest-factoryboy
     #   pytest-mock
     #   pytest-xdist
-pytest-django==4.8.0
+pytest-django==4.9.0
     # via -r requirements.in
 pytest-factoryboy==2.7.0
     # via -r requirements.in

@@ -86,7 +86,7 @@ coreapi==2.3.3
     #   openapi-codec
 coreschema==0.0.4
     # via coreapi
-coverage==7.5.3
+coverage==7.6.10
     # via -r requirements.in
 cron-descriptor==1.4.3
     # via -r requirements.in

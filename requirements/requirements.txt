@@ -466,7 +466,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-virtualenv==20.26.1
+virtualenv==20.26.6
     # via pre-commit
 watchfiles==0.22.0
     # via

@@ -98,7 +98,7 @@ defusedxml==0.7.1
     # via nbconvert
 distlib==0.3.8
     # via virtualenv
-django==5.0.7
+django==5.0.10
     # via
     #   -r requirements.in
     #   collectfast

@@ -21,8 +21,6 @@ class VerificationCode(models.Model):
         ]
 
     def save(self, *args, **kwargs):
-        if not self.key:
-            self.key = generate_key()
-        if not self.code:
-            self.code = generate_code()
+        self.key = generate_key()
+        self.code = generate_code()
         return super().save(*args, **kwargs)

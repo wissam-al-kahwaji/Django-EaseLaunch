@@ -59,7 +59,7 @@ The Django service runs the main application, built from the provided Dockerfile
          - ./.envs/.env
        ports:
          - 8080:8080
-       command: just build-dev manage-start-logfile open-devlog
+       command: just build manage-start-logfile open-devlog
 
 - ``build.context``: Specifies the build context (current directory).
 - ``dockerfile``: Path to the Dockerfile used for building the Django image.
@@ -71,6 +71,15 @@ The Django service runs the main application, built from the provided Dockerfile
 - ``env_file``: Specifies the environment file used to set environment variables for the container.
 - ``ports``: Maps port ``8080`` on the host to port ``8080`` on the container.
 - ``command``: Defines the command to run the Django application.
+
+.. note::
+  ``command: just build-dev manage-start-logfile open-devlog``
+
+  - The ``build`` command is used to run ``makemigrations & migrate`` and create an admin account.
+  - If you do not want this to happen every time the container starts, change it to ``build-dev``.
+  - The ``build-dev`` command only checks for the existence of an admin account, and you will manage migrations manually.
+  - Note that the admin user will not be created automatically when the container starts for the first time.
+
 
 PostgreSQL Service
 ______________________

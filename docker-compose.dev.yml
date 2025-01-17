@@ -6,8 +6,8 @@ networks:
         - subnet: 173.14.0.0/24
   # =====================================
 volumes:
-    postgres_data:
-    redis_data:
+  postgres_data:
+  redis_data:
   # =====================================
 services:
   django: &django
@@ -27,7 +27,7 @@ services:
       - ./.envs/.env
     ports:
       - 8080:8080
-    command: just build-dev manage-start-logfile open-devlog
+    command: just build manage-start-logfile open-devlog
   # =====================================
   postgres:
     image: postgres:latest

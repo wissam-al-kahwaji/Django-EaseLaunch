@@ -55,6 +55,8 @@ class VerifyCodeResetPassowrd(APIView):
     @extend_schema(
         operation_id="Verify Reset Password Code",
         summary="Verify a reset password code to the user's email",
+        request=GetKeySerializer,
+        responses=GetKeySerializer,
     )
     def post(self, *args, **kwargs):
         """

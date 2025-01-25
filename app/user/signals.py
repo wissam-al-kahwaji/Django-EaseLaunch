@@ -4,9 +4,11 @@ from octo.utils.image import resize_image
 from .models import User
 from octo.utils.generate import generate_code
 from app.account.tasks import send_verification_email
+from django.db import transaction
 
 
 @receiver(signals.pre_save, sender=User)
+@transaction.atomic()
 def pre_save_user(sender: User, instance: User, **kwargs):
     try:
         if instance.pk:

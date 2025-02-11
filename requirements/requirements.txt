@@ -90,7 +90,7 @@ coverage==7.6.10
     # via -r requirements.in
 cron-descriptor==1.4.5
     # via -r requirements.in
-cryptography==44.0.0
+cryptography==44.0.1
     # via -r requirements.in
 decorator==5.1.1
     # via ipython

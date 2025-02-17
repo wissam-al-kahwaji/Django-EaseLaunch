@@ -161,7 +161,7 @@ executing==2.1.0
     # via stack-data
 factory-boy==3.3.1
     # via pytest-factoryboy
-faker==33.3.1
+faker==36.1.1
     # via
     #   -r requirements.in
     #   factory-boy
@@ -334,7 +334,6 @@ python-dateutil==2.9.0.post0
     # via
     #   botocore
     #   celery
-    #   faker
     #   jupyter-client
     #   python-crontab
 pytz==2024.2
@@ -438,12 +437,12 @@ typing-extensions==4.12.2
     # via
     #   anyio
     #   collectfast
-    #   faker
     #   pytest-factoryboy
     #   referencing
 tzdata==2024.2
     # via
     #   celery
+    #   faker
     #   kombu
 uritemplate==4.1.1
     # via
